@@ -40,3 +40,10 @@ Run `npm install` after extracting the project, then `npm run dev`.
 ### Production note
 
 Because the project is frontend-only, attendance is stored locally in the browser. Real multi-device attendance, automated email delivery, and automated WhatsApp/SMS messaging require a secure backend/database and server-side notification providers. API credentials should never be placed in frontend code.
+
+AUTHORS: 
+1) GAURAV KANDPAL
+2) CHANDRA PRAKASH SHARMA
+3) GAURAV DUMKA
+4) AMIT BHATT
+   

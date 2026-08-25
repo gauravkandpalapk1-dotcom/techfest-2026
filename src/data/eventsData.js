@@ -1,0 +1,221 @@
+export const EVENT_CATEGORIES = [
+  { id: 'all', name: 'ALL ARENAS' },
+  { id: 'hackathon', name: 'FLAGSHIP HACKATHON' },
+  { id: 'coding', name: 'COMPETITIVE CODING' },
+  { id: 'ai', name: 'AI / ML SUMMIT' },
+  { id: 'cyber', name: 'CYBERSECURITY' },
+  { id: 'robotics', name: 'ROBOTICS & BOTWARS' },
+  { id: 'gaming', name: 'ESPORTS & GAMING' },
+  { id: 'electronics', name: 'ELECTRONICS & IOT' },
+  { id: 'workshops', name: 'MASTERCLASSES' }
+];
+
+export const EVENTS_DATA = [
+  {
+    id: 'neural-hack-2026',
+    category: 'hackathon',
+    name: 'NEURAL HACK 2026: 36H QUANTUM SPRINT',
+    title: 'NEURAL HACK 2026: 36H QUANTUM SPRINT',
+    shortDescription: 'Build autonomous AI multi-agent swarms, zero-knowledge financial rollups, or spatial computing interfaces in 36 continuous hours.',
+    prizePool: '₹5,00,000',
+    prizeBreakdown: { first: '₹2,50,000', second: '₹1,50,000', third: '₹1,00,000' },
+    teamSize: '2 - 4 Hackers',
+    date: 'OCT 24 - 25, 2026',
+    time: '09:00 AM (36 Hours)',
+    venue: 'Quantum Auditorium & Hacker Arena',
+    status: 'REGISTRATION OPEN',
+    featured: true,
+    registrationFee: 'FREE (Shortlist)',
+    seatsLeft: 14,
+    totalSeats: 100,
+    tags: ['AI Agents', 'Fullstack', 'Web3', 'Hardware'],
+    description: 'The premier flagship hackathon of PULSE 2026. Gather your elite engineering team to build groundbreaking software or hardware solutions within 36 non-stop hours with live mentorship from Google DeepMind and OpenAI engineers.',
+    problemStatements: [
+      'Autonomous Multi-Agent Swarms for Emergency Disaster Logistics',
+      'Zero-Knowledge Proof Sovereign Identity Protocol for Web3',
+      'Low-Latency Edge AI for Neural Bionic Prosthetics'
+    ],
+    rules: [
+      'All code must be written during the 36-hour sprint duration.',
+      'Open-source frameworks & public APIs permitted with prior disclosure.',
+      'Teams must present a 3-minute live pitch to the judging panel.'
+    ]
+  },
+  {
+    id: 'algo-clash-2026',
+    category: 'coding',
+    name: 'ALGO-CLASH: HIGH-FREQUENCY CODING SPRINT',
+    title: 'ALGO-CLASH: HIGH-FREQUENCY CODING SPRINT',
+    shortDescription: 'Speed-solve complex data structures, dynamic programming, and graph algorithms against the clock.',
+    prizePool: '₹1,50,000',
+    prizeBreakdown: { first: '₹75,000', second: '₹45,000', third: '₹30,000' },
+    teamSize: 'Solo Hacker',
+    date: 'OCT 24, 2026',
+    time: '02:00 PM - 05:00 PM',
+    venue: 'Code Lab 301',
+    status: 'SEATS FILLING FAST',
+    featured: false,
+    registrationFee: '₹100',
+    seatsLeft: 9,
+    totalSeats: 120,
+    tags: ['Algorithms', 'C++', 'Python', 'Data Structures'],
+    description: 'A 3-hour intense algorithmic showdown on custom Codeforces/HackerRank platform. Solve 6 problems ranging from graph theory to number theory under tight memory limits.',
+    problemStatements: [
+      'Optimal pathfinding on dynamic weighted graphs with interval queries.',
+      'Bitmask dynamic programming for traveling salesperson variations.'
+    ],
+    rules: [
+      'Language choices: C++, Java, Python 3, Rust, Go.',
+      'Plagiarism checks enforced via automated AST comparison engines.'
+    ]
+  },
+  {
+    id: 'cyber-ctf-warfare',
+    category: 'cyber',
+    name: 'CYBER MATRIX: 24H RED VS BLUE CTF',
+    title: 'CYBER MATRIX: 24H RED VS BLUE CTF',
+    shortDescription: 'Jeopardy-style capture the flag challenge spanning binary exploitation, reverse engineering, web pwn, and crypto.',
+    prizePool: '₹2,50,000',
+    prizeBreakdown: { first: '₹1,25,000', second: '₹75,000', third: '₹50,000' },
+    teamSize: '1 - 3 Operatives',
+    date: 'OCT 24, 2026',
+    time: '04:00 PM (24 Hours)',
+    venue: 'Cyber Range Lab 404',
+    status: 'REGISTRATION OPEN',
+    featured: true,
+    registrationFee: '₹300 / Team',
+    seatsLeft: 7,
+    totalSeats: 60,
+    tags: ['Reverse Eng', 'Exploitation', 'Cryptography', 'Pwn'],
+    description: 'Infiltrate intentionally vulnerable linux kernels, crack lattice-based quantum encryption, and discover zero-day web flaws before the 24-hour clock runs out.',
+    problemStatements: [
+      'Kernel Memory Corruption & Privilege Escalation in custom OS driver.',
+      'Lattice-Based Post-Quantum Cryptanalysis & Flag Decryption.'
+    ],
+    rules: [
+      'Attacking competition infrastructure leads to immediate ban.',
+      'Write-ups required for top 5 teams to confirm flag authenticity.'
+    ]
+  },
+  {
+    id: 'robo-wars-titan',
+    category: 'robotics',
+    name: 'TITAN BRAWL: 60KG KINETIC BOTWARS',
+    title: 'TITAN BRAWL: 60KG KINETIC BOTWARS',
+    shortDescription: 'Heavyweight combat robots battling inside a bulletproof polycarbonate and steel arena.',
+    prizePool: '₹3,00,000',
+    prizeBreakdown: { first: '₹1,50,000', second: '₹1,00,000', third: '₹50,000' },
+    teamSize: '2 - 5 Engineers',
+    date: 'OCT 25, 2026',
+    time: '10:00 AM - 05:00 PM',
+    venue: 'The Steel Colosseum (Central Yard)',
+    status: 'SEATS FILLING FAST',
+    featured: true,
+    registrationFee: '₹1,000 / Bot',
+    seatsLeft: 4,
+    totalSeats: 32,
+    tags: ['Mechatronics', 'Combat Robotics', 'Kinetic Weaponry'],
+    description: 'Construct a 60kg combat robot equipped with vertical spinning blades, pneumatic hammers, or wedge flippers. Compete in double elimination brackets.',
+    problemStatements: [
+      'Outlast opposing combat robot in 3-minute bouts or cause catastrophic knockout.'
+    ],
+    rules: [
+      'Weight limit: 60 kg (+0.5kg tolerance).',
+      'Remote failsafe kill-switch required on all bots.'
+    ]
+  },
+  {
+    id: 'gen-ai-synapse',
+    category: 'ai',
+    name: 'SYNAPSE: GEN-AI MULTIMODAL SHOWDOWN',
+    title: 'SYNAPSE: GEN-AI MULTIMODAL SHOWDOWN',
+    shortDescription: 'Benchmark prompt control, visual diffusion reverse-engineering, and LLM agent orchestration.',
+    prizePool: '₹1,00,000',
+    prizeBreakdown: { first: '₹50,000', second: '₹30,000', third: '₹20,000' },
+    teamSize: 'Solo / Duo',
+    date: 'OCT 24, 2026',
+    time: '11:00 AM - 03:00 PM',
+    venue: 'Neural Lab 102',
+    status: 'REGISTRATION OPEN',
+    featured: false,
+    registrationFee: '₹150',
+    seatsLeft: 18,
+    totalSeats: 80,
+    tags: ['Generative AI', 'LLMs', 'Diffusion Models', 'Agents'],
+    description: 'Solve real-time visual reverse engineering, adversarial jailbreak challenges, and automated code generation benchmarks using raw prompt architecture.',
+    problemStatements: [
+      'Recreate 3D render outputs using exact diffusion prompt parameters.',
+      'Bypass system prompt guardrails in sandbox LLM environment.'
+    ],
+    rules: [
+      'API tokens provided on site.',
+      'Judging based on SSIM visual similarity and token efficiency.'
+    ]
+  },
+  {
+    id: 'valorant-apex-lan',
+    category: 'gaming',
+    name: 'VALORANT APEX: 5V5 TACTICAL LAN',
+    title: 'VALORANT APEX: 5V5 TACTICAL LAN',
+    shortDescription: 'High-octane tactical FPS LAN tournament on 240Hz esports monitors with live commentary.',
+    prizePool: '₹1,50,000',
+    prizeBreakdown: { first: '₹90,000', second: '₹40,000', third: '₹20,000' },
+    teamSize: '5 Players',
+    date: 'OCT 25, 2026',
+    time: '01:00 PM - 09:00 PM',
+    venue: 'Esports Arena Lounge',
+    status: 'SEATS FILLING FAST',
+    featured: false,
+    registrationFee: '₹500 / Team',
+    seatsLeft: 5,
+    totalSeats: 32,
+    tags: ['Esports', 'Valorant', 'LAN Tournament', 'Gaming'],
+    description: 'Compete in single elimination LAN brackets on custom high-refresh rigs in front of a live audience.',
+    problemStatements: ['Secure match victories across Best-of-3 series.'],
+    rules: ['Standard Riot Games esports ruleset applies. Official peripherals permitted.']
+  },
+  {
+    id: 'iot-smart-grid',
+    category: 'electronics',
+    name: 'CIRCUIT PULSE: EMBEDDED IOT & FPGA ARENA',
+    title: 'CIRCUIT PULSE: EMBEDDED IOT & FPGA ARENA',
+    shortDescription: 'Design low-latency FPGA digital circuits and micro-controller sensor nodes on custom PCBs.',
+    prizePool: '₹1,20,000',
+    prizeBreakdown: { first: '₹60,000', second: '₹40,000', third: '₹20,000' },
+    teamSize: '1 - 3 Engineers',
+    date: 'OCT 26, 2026',
+    time: '10:00 AM - 02:00 PM',
+    venue: 'VLSI & Hardware Lab',
+    status: 'REGISTRATION OPEN',
+    featured: false,
+    registrationFee: '₹200',
+    seatsLeft: 14,
+    totalSeats: 50,
+    tags: ['Verilog', 'FPGA', 'Microcontrollers', 'IoT'],
+    description: 'Synthesize Verilog code onto Xilinx FPGAs and wire custom sensor nodes to simulate smart energy grids.',
+    problemStatements: ['Implement hardware-accelerated AES encryption module on FPGA.'],
+    rules: ['FPGA development boards provided on site.']
+  },
+  {
+    id: 'qiskit-masterclass',
+    category: 'workshops',
+    name: 'QUANTUM COMPUTING WITH QISKIT MASTERCLASS',
+    title: 'QUANTUM COMPUTING WITH QISKIT MASTERCLASS',
+    shortDescription: 'Hands-on workshop led by IBM Quantum senior scientists. Run code on real 127-qubit quantum hardware.',
+    prizePool: 'Certificates & Swag',
+    prizeBreakdown: { first: 'IBM Certified Badge', second: 'Hardware Credits', third: 'Swag Pack' },
+    teamSize: 'Individual',
+    date: 'OCT 26, 2026',
+    time: '01:00 PM - 04:00 PM',
+    venue: 'Main Auditorium',
+    status: 'INVITE ONLY',
+    featured: true,
+    registrationFee: '₹500',
+    seatsLeft: 22,
+    totalSeats: 150,
+    tags: ['Quantum', 'Qiskit', 'IBM Quantum', 'Workshop'],
+    description: 'Learn quantum circuit design, Grover search algorithms, Shor factorization, and execute Python code on real IBM quantum computers.',
+    problemStatements: ['Simulate quantum teleportation protocol on IBM cloud backend.'],
+    rules: ['Laptop with Python 3.10+ required. Attendance mandatory for certificate.']
+  }
+];
